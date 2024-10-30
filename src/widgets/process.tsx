@@ -62,7 +62,7 @@ export function Process() {
               <button className='card-inset-shadow sm:w-auto shrink-0 rounded-lg overflow-clip w-fit h-full' onClick={() => {
                 window.open(imgSrc, '_blank')
               }} key={i}>
-                <img src={imgSrc} className='w-full h-fit sm:h-full sm:w-fit' />
+                <img src={imgSrc} className='sm:h-full' />
               </button>
             ))}
           </div>

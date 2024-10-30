@@ -1,4 +1,5 @@
 import { Hero } from '@/widgets/hero'
+import { Trailers } from '@/widgets/trailers'
 import { About } from '@/widgets/about'
 import { Process } from '@/widgets/process'
 import { Price } from '@/widgets/price'
@@ -9,6 +10,7 @@ export function App() {
   return (
     <main className='flex flex-col w-full'>
       <Hero />
+      <Trailers />
       <About />
       <Process />
       <Price />
