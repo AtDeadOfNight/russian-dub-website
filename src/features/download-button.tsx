@@ -18,7 +18,7 @@ export function DownloadButton() {
     setDialogVisible(true)
   }
 
-  const IS_RELEASED = false
+  const IS_RELEASED = true
 
   return (
     <>
