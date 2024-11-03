@@ -9,7 +9,7 @@ import extractAll from '@/assets/download-instructions/extract-all.jpg'
 import { Timer } from '@/features/timer'
 
 // const downloadLink = `https://github.com/AtDeadOfNight/russian-dub-release/releases/download/${version}/at-dead-of-night-russian-${version}.zip`
-const downloadLink = '/at-dead-of-night-russian-v1.0.0.zip'
+const downloadLink = `/at-dead-of-night-russian-${version}.zip`
 
 export function DownloadButton() {
   const [dialogVisible, setDialogVisible] = React.useState(false)
