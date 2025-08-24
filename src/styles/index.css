@@ -161,3 +161,11 @@ dialog:target {
 		opacity 200ms ease-in-out,
 		visibility 0s linear 0s;
 }
+
+audio.small-player::-webkit-media-controls-timeline {
+	display: none;
+}
+
+audio.small-player::-webkit-media-controls-play-button {
+	display: block !important;
+}

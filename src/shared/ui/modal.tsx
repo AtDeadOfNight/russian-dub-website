@@ -15,13 +15,9 @@ export function Modal({
 	return (
 		<dialog
 			className={`no-text-shadow dialog fixed left-0 top-0 h-full w-full
-				items-center justify-center bg-black/75 flex`}
+				items-center justify-center bg-black/75 flex z-[100]`}
 			id={id}
 		>
-			{/* <div
-        className='fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.75)] z-[100] transition-opacity flex items-center justify-center no-text-shadow'
-        id={id}
-      > */}
 			<a
 				href="#close"
 				className="top-0 left-0 w-full h-full absolute cursor-default"
