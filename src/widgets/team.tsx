@@ -33,8 +33,9 @@ import Journalist2 from '@/assets/audio/journalist.mp3'
 
 export function Team() {
   return (
-    <div className='flex flex-col items-center justify-center w-full h-fit gap-2 bg-team p-4 xs:p-8 sm:p-16 1370px:p-32'>
-      <div className='flex-1 flex flex-col items-center gap-10 text-shadow'>
+    <div className='flex flex-col items-center justify-center w-full h-fit gap-2 relative p-4 xs:p-8 sm:p-16 1370px:p-32'>
+      <img src="/floor.webp" draggable="false" className='absolute top-0 left-0 w-full h-full object-cover select-none' loading='lazy' />
+      <div className='flex-1 flex flex-col items-center gap-10 text-shadow relative z-[1]'>
         <h2 className='text-6xl'>Команда</h2>
         <div className='flex flex-col gap-10 items-center'>
           <div className='flex items-start gap-5'>

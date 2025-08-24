@@ -1,10 +1,10 @@
 import '@/styles/index.css'
 import '@/styles/fonts.css'
+import { ViteReactSSG } from 'vite-react-ssg/single-page'
 import React from 'react'
-import ReactDOM from 'react-dom/client'
 import { App } from '@/pages/index'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+export const createRoot = ViteReactSSG(
   <React.StrictMode>
     <App />
   </React.StrictMode>,

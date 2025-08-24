@@ -3,153 +3,161 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'At Dead of Night Text', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	font-family: 'At Dead of Night Text', sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
 
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
+	color-scheme: dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #000000;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-:root, #root {
-  width: 100%;
+:root,
+#root {
+	width: 100%;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+	color: #535bf2;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 320px;
+	min-height: 100vh;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'At Dead of Night Display', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'At Dead of Night Display', sans-serif;
 }
 
 .bg-blood-splatter {
-  background-image: url('@/assets/blood-splatter.webp');
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  animation-name: bg-blood-splatter-keyframes;
-  animation-timing-function: linear;
-  animation-duration: 1ms;
-  animation-direction: alternate;
-  animation-timeline: scroll(root);
-  animation-range: 0px 50vh;
+	background-image: url('@/assets/blood-splatter.webp');
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	animation-name: bg-blood-splatter-keyframes;
+	animation-timing-function: linear;
+	animation-duration: 1ms;
+	animation-direction: alternate;
+	animation-timeline: scroll(root);
+	animation-range: 0px 50vh;
 }
 
 @keyframes bg-blood-splatter-keyframes {
-  from {
-    background-position: center 0%;
-  }
+	from {
+		background-position: center 0%;
+	}
 
-  to {
-    background-position: center 100%;
-  }
-}
-
-.bg-about {
-  background-image: url('@/assets/sea-view-hotel.webp');
-  background-size: cover;
-  background-position: left center;
-  background-repeat: no-repeat;
+	to {
+		background-position: center 100%;
+	}
 }
 
 .animation-bg-hero {
-  animation-name: animation-bg-hero-keyframes;
-  animation-timing-function: linear;
-  animation-duration: 1ms;
-  animation-direction: alternate;
-  animation-timeline: scroll(root);
-  animation-range: 0px 100vh;
+	animation-name: animation-bg-hero-keyframes;
+	animation-timing-function: linear;
+	animation-duration: 1ms;
+	animation-direction: alternate;
+	animation-timeline: scroll(root);
+	animation-range: 0px 100vh;
 }
 
 @keyframes animation-bg-hero-keyframes {
-  from {
-    transform: scale(1);
-  }
+	from {
+		transform: scale(1);
+	}
 
-  to {
-    transform: scale(1.1);
-  }
+	to {
+		transform: scale(1.1);
+	}
 }
 
 .text-shadow {
-  text-shadow: 0 0 4px #161616, 0 0 8px #161616, 0 0 12px #161616;
+	text-shadow:
+		0 0 4px #161616,
+		0 0 8px #161616,
+		0 0 12px #161616;
 }
 
 .card-inset-shadow {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.25);
-}
-
-.bg-team {
-  background-image: url('@/assets/floor.png');
-  background-size: cover;
-  background-position: left center;
-  background-repeat: no-repeat;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.25);
 }
 
 .no-text-shadow {
-  text-shadow: none;
-}
-
-.bg-sea-view {
-  background-image: url('@/assets/sea-view.png');
-  background-size: cover;
-  background-position: 30% center;
-  background-repeat: no-repeat;
+	text-shadow: none;
 }
 
 .scrollbar-gray::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
+	height: 8px;
+	width: 8px;
 }
 
 .scrollbar-gray::-webkit-scrollbar-track {
-  border-radius: 20px;
-  background-color: #3D3D3D;
+	border-radius: 20px;
+	background-color: #3d3d3d;
 }
 
 .scrollbar-gray::-webkit-scrollbar-track:hover {
-  background-color: #3D3D3D;
+	background-color: #3d3d3d;
 }
 
 .scrollbar-gray::-webkit-scrollbar-track:active {
-  background-color: #3D3D3D;
+	background-color: #3d3d3d;
 }
 
 .scrollbar-gray::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background-color: #ADADAD;
+	border-radius: 20px;
+	background-color: #adadad;
 }
 
 .scrollbar-gray::-webkit-scrollbar-thumb:hover {
-  background-color: #ADADAD;
+	background-color: #adadad;
 }
 
 .scrollbar-gray::-webkit-scrollbar-thumb:active {
-  background-color: #ADADAD;
+	background-color: #adadad;
+}
+
+body:has(dialog:target) {
+	overflow: hidden;
+}
+
+dialog {
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity 200ms ease-in-out,
+		visibility 0s linear 200ms;
+}
+
+dialog:target {
+	opacity: 1;
+	visibility: visible;
+	transition:
+		opacity 200ms ease-in-out,
+		visibility 0s linear 0s;
 }

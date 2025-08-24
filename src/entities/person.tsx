@@ -17,7 +17,7 @@ export function Person({ name, avatar, aka, role, wide = false, link, audio }: {
   const audioPlayerRef = React.useRef<HTMLAudioElement>(null)
   
   const avatarComponent = (
-    <img src={avatar} className='w-24 h-24 rounded-full bg-neutral-900' alt={name} />
+    <img src={avatar} className='w-24 h-24 rounded-full bg-neutral-900' alt={name} loading="lazy" />
   )
 
   const nextAudio = () => {

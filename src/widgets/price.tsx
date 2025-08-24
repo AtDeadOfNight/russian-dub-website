@@ -4,9 +4,10 @@ import { DubPriceChart } from '@/entities/dub-price-chart'
 
 export function Price() {
   return (
-    <div className='flex flex-col sm:flex-row items-center justify-center w-full sm:h-[700px] sm:gap-20 bg-sea-view p-8 sm:py-0 sm:px-16 1370px:px-32'>
+    <div className='flex flex-col sm:flex-row items-center justify-center w-full sm:h-[700px] sm:gap-20 p-8 sm:py-0 sm:px-16 1370px:px-32 relative'>
+      <img src="/sea-view.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover select-none' draggable="false" />
       <DubPriceChart />
-      <div className='flex-[3] flex flex-col gap-5 justify-between min-w-0 text-xl lg:text-2xl leading-tight text-shadow'>
+      <div className='flex-[3] flex flex-col gap-5 justify-between min-w-0 text-xl lg:text-2xl leading-tight text-shadow relative z-[1]'>
         <h2 className='text-4xl'>Сколько стоило сделать дубляж</h2>
         <p>
           Без учета оплаты работы по сведению и монтажу и гонораров актерам-волонтерам (фанатам игры), стоимость дубляжа составила <b>77 000 рублей (832$)</b>.

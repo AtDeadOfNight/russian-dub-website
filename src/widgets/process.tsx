@@ -1,4 +1,3 @@
-import logoRu from '@/assets/logo-ru.png'
 import howItsDone1 from '@/assets/process/1.jpg'
 import howItsDone2 from '@/assets/process/2.jpg'
 import howItsDone3 from '@/assets/process/3.jpg'
@@ -16,19 +15,19 @@ import howItsDoneVideo1 from '@/assets/process/adon-adding-effects-rack.mp4'
 import howItsDoneVideo2 from '@/assets/process/adon-making-jimendappear.mp4'
 
 const processImages = [
-  howItsDone1,
-  howItsDone2,
-  howItsDone9,
-  howItsDone4,
-  howItsDone11,
-  howItsDone8,
-  howItsDone10,
-  howItsDone7,
-  howItsDone12,
-  howItsDone3,
-  howItsDone6,
-  howItsDone5,
-  howItsDone13,
+  { src: howItsDone1, ar: 1.602543720190779 },
+  { src: howItsDone2, ar: 1.5403128760529483 },
+  { src: howItsDone9, ar: 2.1440536013400333 },
+  { src: howItsDone4, ar: 1.5403128760529483 },
+  { src: howItsDone11, ar: 2.5548902195608783 },
+  { src: howItsDone8, ar: 1.7630853994490359 },
+  { src: howItsDone10, ar: 1.5403128760529483 },
+  { src: howItsDone7, ar: 1.8523878437047756 },
+  { src: howItsDone12, ar: 1.6976127320954908 },
+  { src: howItsDone3, ar: 1.5403128760529483 },
+  { src: howItsDone6, ar: 1.4883720930232558 },
+  { src: howItsDone5, ar: 1.5403128760529483 },
+  { src: howItsDone13, ar: 1.539714867617108 },
 ]
 
 export function Process() {
@@ -42,7 +41,7 @@ export function Process() {
             <li><a href="https://t.me/adonru/6" target="_blank" rel="nofollow noreferrer">Удаление надписей из видеоряда туториала, монтаж туториала с новыми надписями</a></li>
             <li><a href="https://t.me/adonru/26" target="_blank" rel="nofollow noreferrer">Сортировка фраз по персонажам, ручные правки, компиляция в таблицу для удобства</a></li>
             <li><a href="https://vk.com/wall-203662695_1112" target="_blank" rel="nofollow noreferrer">Кастинг актеров и актерш на каждую роль с привлечением сообщества игры (голосовали фанаты)</a></li>
-            <li><a href="https://t.me/adonru/12" target="_blank" rel="nofollow noreferrer">Разработка скрипта, который накладывает русские надписи поверх Hotel.m4v внутри игры</a></li>
+            <li><a href="https://t.me/adonru/12" target="_blank" rel="nofollow noreferrer">Разработка скрипта, который накладывает русскоязычные надписи поверх Hotel.m4v внутри игры</a></li>
             <li><a href="https://t.me/adonru/31" target="_blank" rel="nofollow noreferrer">Плейтест после каждого этапа, правки, корпотливый подбор подходящих параметров реверба</a></li>
             <li>Сортировка аудиофайлов по персонажам, индивидуальная работа с каждым актером для записи</li>
             <li><a href="https://t.me/adonru/42" target="_blank" rel="nofollow noreferrer">Правки в CSS код игры для корректного отображения кириллического текста</a></li>
@@ -53,17 +52,15 @@ export function Process() {
             <li><a href="https://t.me/adonru/204" target="_blank" rel="nofollow noreferrer">Кастинг и найм профессиональных актеров озвучки для озвучивания мужских персонажей</a></li>
           </ul>
         </div>
-        <img src={logoRu} className='max-h-[400px] aspect-square sm:h-[400px]' />
+        <img src="/logo-ru.webp" className='max-h-[400px] aspect-square sm:h-[400px]' loading="lazy" />
       </div>
       <div className='sm:bg-neutral-900 sm:p-4 sm:pb-4 sm:rounded-xl h-auto sm:h-[232px] w-full'>
         <div className='w-full h-full overflow-auto scrollbar-gray pb-4'>
           <div className='flex flex-col sm:flex-row gap-2 h-fit w-fit sm:h-full sm:w-full'>
-            {processImages.map((imgSrc, i) => (
-              <button className='card-inset-shadow sm:w-auto shrink-0 rounded-lg overflow-clip w-fit h-full' onClick={() => {
-                window.open(imgSrc, '_blank')
-              }} key={i}>
-                <img src={imgSrc} className='sm:h-full' />
-              </button>
+            {processImages.map(({ src, ar }, i) => (
+              <a href={src} target='_blank' rel='noopener noreferrer' className='card-inset-shadow sm:w-auto shrink-0 rounded-lg overflow-clip w-fit h-full' key={i}>
+                <img src={src} className='sm:h-full bg-neutral-400' style={{ aspectRatio: ar }} loading="lazy" />
+              </a>
             ))}
           </div>
         </div>
