@@ -21,7 +21,7 @@ export function DocumentsButtonModal() {
 				</li>
 				<li>
 					<a
-						href="/check-jimmy.pdf"
+						href="/receipt-jimmy.pdf"
 						download="Чек на покупку озвучки у Андрея Вальца"
 						className="flex gap-1 items-center w-fit"
 					>
@@ -35,7 +35,7 @@ export function DocumentsButtonModal() {
 				</li>
 				<li>
 					<a
-						href="/check-bose-and-others.pdf"
+						href="/receipt-bose-and-others.pdf"
 						download="Чек на покупку озвучки у Д. Боуза и других персонажей"
 						className="flex gap-1 items-center w-fit"
 					>
